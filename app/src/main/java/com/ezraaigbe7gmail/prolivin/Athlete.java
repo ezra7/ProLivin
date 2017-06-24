@@ -9,14 +9,14 @@ public class Athlete {
     String aname;
     String ateam;
     String acollege;
-    double aweight;
+    int aweight;
     int afeet;
     int ainches;
     int aage;
+    WorkoutPlan athleteWorkout;
 
 
-
-    public Athlete(String name, String team, String college, double weight, int feet, int inches, int age){
+    public Athlete(String name, String team, String college, int weight, int feet, int inches, int age){
 
         this.aname = name;
         this.ateam = team;
@@ -26,6 +26,12 @@ public class Athlete {
         this.ainches = inches;
         this.aage = age;
 
+
+
+    }
+
+    public void setAthleteWorkout(WorkoutPlan athleteWorkout){
+        this.athleteWorkout = athleteWorkout;
 
     }
 
@@ -39,7 +45,7 @@ public class Athlete {
     public String getCollege(){
         return acollege;
     }
-    public double getWeight(){
+    public int getWeight(){
         return aweight;
     }
     public int getFeet(){
