@@ -6,14 +6,16 @@ package com.ezraaigbe7gmail.prolivin;
 
 public class Exercise {
     String exerciseName;
+    int set;
     int rep;
     int weight;
 
 
-    public Exercise (String exerciseName, int rep, int weight) {
+    public Exercise (String exerciseName,int set, int rep, int weight) {
         this.exerciseName = exerciseName;
         this.rep = rep;
         this.weight = weight;
+        this.set = set;
 
     }
 
@@ -27,6 +29,10 @@ public class Exercise {
 
     public int getWeight(){
         return weight;
+    }
+
+    public int set(){
+        return set;
     }
 }
 

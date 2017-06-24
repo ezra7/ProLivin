@@ -3,8 +3,10 @@ package com.ezraaigbe7gmail.prolivin;
 import java.util.ArrayList;
     public class WorkoutPlan {
 
+        ArrayList<Workout> workoutList;
+
         public WorkoutPlan (){
-            ArrayList<Workout> workoutList = new ArrayList<Workout>();
+            this.workoutList = new ArrayList<Workout>();
 
         }
     }

@@ -7,10 +7,11 @@ package com.ezraaigbe7gmail.prolivin;
 import java.util.ArrayList;
 public class Workout {
     String workoutType;
+    ArrayList<Exercise> exerciseList;
 
     public Workout(String workoutType) {
         this.workoutType = workoutType;
-        ArrayList<Exercise> exerciseList = new ArrayList<Exercise>();
+        this.exerciseList = new ArrayList<Exercise>();
     }
     public String getWorkoutType() {
         return workoutType;
