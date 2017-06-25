@@ -6,6 +6,135 @@
     android:layout_height="match_parent"
     tools:context="com.ezraaigbe7gmail.prolivin.ProLivinScore">
 
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="570dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/calc"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="none"
+            android:text="Calculate Your PLS Score"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="#ba0909"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="1000dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+
+            android:cropToPadding="true"
+            android:padding="0dp"
+            android:paddingBottom="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:scaleType="centerInside"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            app:srcCompat="@drawable/logonoframe" />
+
+        <EditText
+            android:id="@+id/bench"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_below="@+id/calc"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Bench (lb)"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/squat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bench"
+            android:layout_alignBottom="@+id/bench"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/foury"
+            android:layout_toRightOf="@+id/foury"
+            android:ems="10"
+            android:hint="Squat (lb)"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/foury"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bench"
+            android:layout_alignStart="@+id/bench"
+            android:layout_below="@+id/bench"
+            android:layout_marginTop="33dp"
+            android:ems="10"
+            android:hint="40 Yard (seconds)"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/power"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/foury"
+            android:layout_alignBottom="@+id/foury"
+            android:layout_alignLeft="@+id/squat"
+            android:layout_alignStart="@+id/squat"
+            android:ems="10"
+            android:hint="Power Clean (lb)"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/foury"
+            android:layout_alignStart="@+id/foury"
+            android:layout_below="@+id/foury"
+            android:layout_marginTop="46dp"
+            android:ems="10"
+            android:hint="Vertical (inches)"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vertical"
+            android:layout_alignEnd="@+id/power"
+            android:layout_alignLeft="@+id/power"
+            android:layout_alignRight="@+id/power"
+            android:layout_alignStart="@+id/power"
+            android:elevation="0dp"
+            android:text="Calculate"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="130dp"
@@ -26,30 +155,6 @@
         app:layout_optimizationLevel="all"
         app:srcCompat="@drawable/search"
         tools:layout_editor_absoluteX="0dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-
-        android:adjustViewBounds="true"
-        android:cropToPadding="true"
-        android:padding="0dp"
-        android:paddingBottom="0dp"
-        android:paddingEnd="0dp"
-        android:paddingLeft="0dp"
-        android:paddingRight="0dp"
-        android:paddingStart="0dp"
-        android:paddingTop="0dp"
-        android:scaleType="centerInside"
-        android:scaleX="0.9"
-        android:scaleY="0.9"
-        app:srcCompat="@drawable/logonoframe"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="-116dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -91,13 +196,5 @@
         app:layout_constraintLeft_toRightOf="@+id/imageButton2"
         app:layout_optimizationLevel="all"
         app:srcCompat="@drawable/plscore" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pro Score"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="66dp" />
 
 </android.support.constraint.ConstraintLayout>
