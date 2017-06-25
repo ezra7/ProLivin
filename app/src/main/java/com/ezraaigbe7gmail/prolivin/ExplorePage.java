@@ -6,38 +6,39 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class ExplorePage extends AppCompatActivity {
+    ArrayAdapter<String> adapter;
 
-    private TextView mTextMessage;
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
-        }
-
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_explore_page);
+        ListView lv = (ListView) findViewById(R.id.listView);
+
+
+        ArrayList<String> alist = new ArrayList<String>();
+
+        alist.add("foo");
+
+        alist.add("bar");
+
+        adapter = new ArrayAdapter<String> (
+                this,
+                android.R.layout.simple_list_item_1,
+                alist );
+
+        lv.setAdapter(adapter);
+
+        alist.add("test");
+        adapter.notifyDataSetChanged();
 
     }
 

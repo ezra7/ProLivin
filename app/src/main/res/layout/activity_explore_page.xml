@@ -8,20 +8,44 @@
     android:screenOrientation="portrait"
     tools:context="com.ezraaigbe7gmail.prolivin.ExplorePage">
 
-    <FrameLayout
-        android:id="@+id/content"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_marginLeft="3dp"
-            android:cropToPadding="false"
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/logowhite" />
-    </FrameLayout>
+            app:srcCompat="@drawable/logonoframe" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="950dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/all"
+            android:id="@+id/imageView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3" />
+
+
+    </RelativeLayout>
 
 </LinearLayout>
