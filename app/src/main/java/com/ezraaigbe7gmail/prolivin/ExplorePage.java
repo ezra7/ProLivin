@@ -42,19 +42,8 @@ public class ExplorePage extends AppCompatActivity {
 
         alist.add("Le'Veon Bell");
 
-        alist.add("Le'Veon Bell");
+        alist.add("Evan Mathis");
 
-        alist.add("Le'Veon Bell");
-
-        alist.add("Le'Veon Bell");
-
-        alist.add("Le'Veon Bell");
-
-        alist.add("Le'Veon Bell");
-
-        alist.add("Le'Veon Bell");
-
-        alist.add("Le'Veon Bell");
 
         adapter = new ArrayAdapter<String> (
                 this,
@@ -62,27 +51,40 @@ public class ExplorePage extends AppCompatActivity {
                 alist );
 
         lv.setAdapter(adapter);
-        alist.add("test3");
-        alist.add("test2");
-        alist.add("test");
+
 
         adapter.notifyDataSetChanged();
         lv.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
             public void onItemClick (AdapterView adapter, View view ,int position, long arg){
+
+
                 if (position == 0) {
-                    Intent appInfo = new Intent(ExplorePage.this, LoginActivity.class);
+                    Intent appInfo = new Intent(ExplorePage.this, AthleteProfile.class);
                     startActivity(appInfo);
                 }
                 if (position == 1) {
-                    Intent english = new Intent(ExplorePage.this, LoginActivity.class);
+                    Intent english = new Intent(ExplorePage.this, AthleteProfile2.class);
                     startActivity(english);
                 }
-                /*if (position == 2) {
-                    Toast.makeText(getApplicationContext(), "You have selected pst3", Toast.LENGTH_LONG).show();
+                if (position == 2) {
+                    //Toast.makeText(getApplicationContext(), "You have selected pst3", Toast.LENGTH_LONG).show();
+                    Intent english = new Intent(ExplorePage.this, AthleteProfile3.class);
+                    startActivity(english);
                 }
-                */
+                if (position == 3) {
+                    Intent english = new Intent(ExplorePage.this, AthleteProfile4.class);
+                    startActivity(english);
+                }
+                if (position == 4) {
+                    Intent english = new Intent(ExplorePage.this, AthleteProfile5.class);
+                    startActivity(english);
+                }
+                if (position == 5) {
+                    Intent english = new Intent(ExplorePage.this, AthleteProfile6.class);
+                    startActivity(english);
+                }
             }
         });
     }

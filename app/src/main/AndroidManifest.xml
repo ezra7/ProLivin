@@ -26,7 +26,13 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_explore_page" />
-        <activity android:name=".Search"></activity>
+        <activity android:name=".Search" />
+        <activity android:name=".AthleteProfile" />
+        <activity android:name=".AthleteProfile2" />
+        <activity android:name=".AthleteProfile3" />
+        <activity android:name=".AthleteProfile4" />
+        <activity android:name=".AthleteProfile5" />
+        <activity android:name=".AthleteProfile6"></activity>
     </application>
 
 </manifest>
