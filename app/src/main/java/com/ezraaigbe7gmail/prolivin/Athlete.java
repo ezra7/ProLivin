@@ -16,7 +16,7 @@ public class Athlete {
     WorkoutPlan athleteWorkout;
 
 
-    public Athlete(String name, String team, String college, int weight, int feet, int inches, int age){
+    public Athlete(String name, String team, String college, int weight, int feet, int inches, int age/* , image parameter*/){
 
         this.aname = name;
         this.ateam = team;

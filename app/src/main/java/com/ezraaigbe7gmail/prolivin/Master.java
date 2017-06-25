@@ -10,12 +10,15 @@ public class Master {
     public static Athlete demo3;
     public static Athlete demo4;
     public static Athlete demo5;
+    public static Athlete demo6;
 
     public static WorkoutPlan workout1;
     public static WorkoutPlan workout2;
     public static WorkoutPlan workout3;
     public static WorkoutPlan workout4;
     public static WorkoutPlan workout5;
+    public static WorkoutPlan workout6;
+
 
 
 
@@ -26,6 +29,8 @@ public class Master {
         demo3 = new Athlete("Odell Beckham Jr.", "New York Giants", "Louisiana State University", 198, 5, 11, 24);
         demo4 = new Athlete("James Harrison", "Pittsburgh Steelers", "Kent State University", 275, 6, 0, 39);
         demo5 = new Athlete("Le'Veon Bell", "Pittsburgh Steelers", "Michigan State University", 225, 6, 1, 25);
+        demo6 = new Athlete("Evan Mathis", "Arizona Cardinals", "University of Alabama", 302, 6, 5, 35);
+
 
 
         workout1 = new WorkoutPlan();
@@ -33,6 +38,7 @@ public class Master {
         workout3 = new WorkoutPlan();
         workout4 = new WorkoutPlan();
         workout5 = new WorkoutPlan();
+        workout6 = new WorkoutPlan();
 
         workout1.workoutList.add(new Workout("Legs/Abs"));
         workout1.workoutList.add(new Workout("Chest"));
@@ -76,6 +82,14 @@ public class Master {
         workout5.workoutList.add(new Workout("Shoulder/Abs"));
         workout5.workoutList.add(new Workout("Arms"));
         workout5.workoutList.add(new Workout("Rest"));
+
+        workout6.workoutList.add(new Workout("Legs/Abs"));
+        workout6.workoutList.add(new Workout("Chest"));
+        workout6.workoutList.add(new Workout("Back/Abs"));
+        workout6.workoutList.add(new Workout("Rest"));
+        workout6.workoutList.add(new Workout("Shoulder/Abs"));
+        workout6.workoutList.add(new Workout("Arms"));
+        workout6.workoutList.add(new Workout("Rest"));
 
 
         workout1.workoutList.get(0).exerciseList.add(new Exercise("Squat", 3, 10, 150));
@@ -133,7 +147,16 @@ public class Master {
         workout5.workoutList.get(5).exerciseList.add(new Exercise("Push ups", 3, 10, 150));
         workout5.workoutList.get(5).exerciseList.add(new Exercise("Bicep Curls", 3, 15, 150));
 
-
+        workout6.workoutList.get(0).exerciseList.add(new Exercise("Squat", 3, 10, 150));
+        workout6.workoutList.get(0).exerciseList.add(new Exercise("Situps", 3, 20, 50));
+        workout6.workoutList.get(1).exerciseList.add(new Exercise("Bench Press", 3, 10, 250));
+        workout6.workoutList.get(1).exerciseList.add(new Exercise("Inclined Bench Press", 3, 10, 250));
+        workout6.workoutList.get(2).exerciseList.add(new Exercise("Barbell Deadlift", 3, 7, 300));
+        workout6.workoutList.get(2).exerciseList.add(new Exercise("Situps", 3, 20, 50));
+        workout6.workoutList.get(4).exerciseList.add(new Exercise("Shoulder Press", 3, 10, 180));
+        workout6.workoutList.get(4).exerciseList.add(new Exercise("Situps", 3, 20, 50));
+        workout6.workoutList.get(5).exerciseList.add(new Exercise("Push ups", 3, 10, 150));
+        workout6.workoutList.get(5).exerciseList.add(new Exercise("Bicep Curls", 3, 15, 150));
 
 
 
