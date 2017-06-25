@@ -26,17 +26,38 @@ public class ExplorePage extends AppCompatActivity {
 
         ArrayList<String> alist = new ArrayList<String>();
 
-        alist.add("foo");
+        alist.add("Russell Wilson");
 
-        alist.add("bar");
+        alist.add("Richard Sherman");
+
+        alist.add("Odell Beckham Jr.");
+
+        alist.add("James Harrison");
+
+        alist.add("Le'Veon Bell");
+
+        alist.add("Le'Veon Bell");
+
+        alist.add("Le'Veon Bell");
+
+        alist.add("Le'Veon Bell");
+
+        alist.add("Le'Veon Bell");
+
+        alist.add("Le'Veon Bell");
+
+        alist.add("Le'Veon Bell");
+
+        alist.add("Le'Veon Bell");
 
         adapter = new ArrayAdapter<String> (
                 this,
-                android.R.layout.simple_list_item_1,
+                android.R.layout.simple_selectable_list_item,
                 alist );
 
         lv.setAdapter(adapter);
-
+        alist.add("test3");
+        alist.add("test2");
         alist.add("test");
         adapter.notifyDataSetChanged();
 
