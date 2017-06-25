@@ -15,6 +15,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,7 +26,7 @@ import java.util.ArrayList;
 public class ExplorePage extends AppCompatActivity {
     ArrayAdapter<String> adapter;
 
-
+ ImageButton a;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +34,8 @@ public class ExplorePage extends AppCompatActivity {
         setContentView(R.layout.activity_explore_page);
         ListView lv = (ListView) findViewById(R.id.listView);
 
-
+        a = (ImageButton) findViewById(R.id.imageButton2);
+        a.setOnClickListener(null);
 
         ArrayList<String> alist = new ArrayList<String>();
 
@@ -56,6 +59,10 @@ public class ExplorePage extends AppCompatActivity {
 
 
         lv.setAdapter(adapter);
+        ImageButton yourButton;
+
+
+
 
 
         adapter.notifyDataSetChanged();
@@ -92,6 +99,32 @@ public class ExplorePage extends AppCompatActivity {
                 }
             }
         });
+        ImageButton buttonSub=(ImageButton) findViewById(R.id.imageButton2);
+        buttonSub.setOnClickListener(new View.OnClickListener()
+        {
+
+            @Override
+            public void onClick(View v)
+            {
+
+                Intent i =new Intent(getApplicationContext(),SubscriptionActivity.class);
+                startActivity(i);
+            }
+        });
+        ImageButton buttonExp =(ImageButton) findViewById(R.id.imageButton5);
+        buttonExp.setOnClickListener(new View.OnClickListener()
+        {
+
+            @Override
+            public void onClick(View v)
+            {
+
+                Intent i =new Intent(getApplicationContext(),ProLivinScore.class);
+                startActivity(i);
+            }
+        });
     }
+
+
 
 }

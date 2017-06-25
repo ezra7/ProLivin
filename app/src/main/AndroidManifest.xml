@@ -32,7 +32,9 @@
         <activity android:name=".AthleteProfile3" />
         <activity android:name=".AthleteProfile4" />
         <activity android:name=".AthleteProfile5" />
-        <activity android:name=".AthleteProfile6"></activity>
+        <activity android:name=".AthleteProfile6" />
+        <activity android:name=".SubscriptionActivity" />
+        <activity android:name=".ProLivinScore"></activity>
     </application>
 
 </manifest>
