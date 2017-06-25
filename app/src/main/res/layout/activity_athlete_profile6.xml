@@ -6,4 +6,134 @@
     android:layout_height="match_parent"
     tools:context="com.ezraaigbe7gmail.prolivin.AthleteProfile6">
 
+    <RelativeLayout
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_height="643dp"
+        android:layout_width="0dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/evanmathis" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="1000dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+
+            android:cropToPadding="true"
+            android:padding="0dp"
+            android:paddingBottom="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:scaleType="centerInside"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            app:srcCompat="@drawable/logonoframe" />
+
+        <TextView
+            android:id="@+id/editText"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_toRightOf="@+id/imageView7"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="none"
+            android:text="Evan Mathis"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/editText2"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/imageView7"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="none"
+            android:text="Arizona Cardinals"
+            android:textColor="#BD2031"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/editText4"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_marginBottom="62dp"
+            android:layout_toRightOf="@+id/imageView7"
+
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="none"
+            android:text="PLS: 78"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="#ba0909"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editText1"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="none"
+            android:text="  Height         Weight"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="#ba0909"
+            android:textSize="40sp"
+            />
+
+        <TextView
+            android:id="@+id/editText11"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="none"
+            android:text="     6'5                302"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="#ba0909"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText11"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/statsevanmathis" />
+
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
