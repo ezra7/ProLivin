@@ -6,6 +6,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -54,6 +55,7 @@ public class ExplorePage extends AppCompatActivity {
                 this,
                 android.R.layout.simple_selectable_list_item,
                 alist );
+
 
         lv.setAdapter(adapter);
         alist.add("test3");
